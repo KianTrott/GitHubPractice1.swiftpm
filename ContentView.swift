@@ -3,6 +3,12 @@ import SwiftUI
 struct ContentView: View {
     @State var FirstNumber: Int = 0
     @State var SecondNumber: Int = 0
+    @State var ThirdNumber: Int = 0
+    @State var FourthNumber: Int = 0
+    @State var FifthNumber: Int = 0
+    @State var SixthNumber: Int = 0
+    @State var SeventhNumber: Int = 0
+    @State var EighthNumber: Int = 0
     @State var Result: Int = 0
     
     var body: some View {
@@ -17,6 +23,8 @@ struct ContentView: View {
                 
                 TextField("Enter Second Number", value: $SecondNumber, format: .number)
                     .textFieldStyle(.roundedBorder)
+                
+                
                 
                 
             }
@@ -36,9 +44,12 @@ struct ContentView: View {
                     
                 }
                 
-                }
+            }
+            Text("\(Result)")
+                .font(.largeTitle)
+                .offset(y: 50)
             
-
+            
         }
     }
 }
